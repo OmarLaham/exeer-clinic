@@ -1,0 +1,735 @@
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+<!-- Current language: {{ LANGUAGE_CODE }} -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="Bootstrap, Landing page, Template, Registration, Landing">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="Grayrids">
+    <title>{% trans "Exeer" %} | {% trans "Online Counseling" %}</title>
+    <!-- Favicon -->
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static "style.css" %}">
+    {% if LANGUAGE_CODE == 'ar' %}
+    <link rel="stylesheet" href="{% static "style-ar.css" %}">
+    {% endif %}
+
+    <!-- Favicon -->
+    <link rel="icon" href="{% static "img/favicon.ico" %}">
+
+  </head>
+  <body>
+      <div class="menu-wrap">
+        <nav class="menu navbar">
+          <div class="icon-list navbar-collapse">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#video-area">{% trans "Home" %}</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">{% trans "How we work" %}</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#features">{% trans "Features" %}</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#portfolios">{% trans "Our Counselors" %}</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#blog">{% trans "Help Guide" %}</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">{% trans "Search Consultations" %}</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <button class="close-button" id="close-button"><i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
+      </div>
+  	<!-- Header Section Start -->
+
+    <header id="video-area" data-stellar-background-ratio="0.5">
+     <div id="block" data-vide-bg="{% static "video/video" %}"></div>
+      <div class="fixed-top">
+          <div class="container">
+            <div class="logo-menu">
+              <a href="" class="logo"><strong>{% trans "Exeer" %}</strong></a>
+              <button class="menu-button" id="open-button"><i class="fa fa-bars" aria-hidden="true"></i></button>
+            </div>
+          </div>
+      </div>
+          <div class="overlay-2"></div>
+      <div class="container">
+        <div class="row justify-content-md-center">
+          <div class="col-md-10">
+            <div class="contents text-center">
+              <h1 class="wow pos fadeInDown" data-wow-duration="1000ms" data-wow-delay="0.3s">{% trans "Exeer" %}</h1>
+              <h1 class="wow pos fadeInDown" data-wow-duration="1000ms" data-wow-delay="0.3s">{% trans "The Smart Counseling Platform" %}</h1>
+              <p class="lead pos  wow fadeIn" data-wow-duration="1000ms" data-wow-delay="400ms">{% trans "Exeer is the first life and psychiatric counseling platform that ensures privacy and security and provides the counselor with the sense of a real counseling session." %}</p>
+              <a href="#services" class="btn pos btn-common wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms"> {% trans "How do we work?" %}</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header Section End -->
+
+
+    <!-- Services Section Start -->
+    <section id="services" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s"><span>{% trans "How do we work?" %}</span></h2>
+          <hr class="lines wow zoomIn" data-wow-delay="0.3s">
+          <p class="section-subtitle wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s"></p>
+        </div>
+        <div class="row {% if LANGUAGE_CODE == 'ar' %}d-block{% endif %}">
+          <div class="col-md-4 col-sm-6 float-left">
+            <div class="item-boxes wow fadeInDown" data-wow-delay="0.2s">
+              <div class="icon">
+                <i class="fa fa-users"></i>
+              </div>
+              <h4>{% trans "Choose the consultant or the psychiatrist" %}</h4>
+              <p>{% trans "Choose one of exeer's experienced consultants or psychiatrists depending on the criteria that you choose." %}</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 float-left">
+            <div class="item-boxes wow fadeInDown" data-wow-delay="0.4s">
+              <div class="icon">
+                <i class="far fa-calendar-alt"></i>
+              </div>
+              <h4>{% trans "Book an appointment" %}</h4>
+              <p>{% trans "Use exeer's smart calendar to book an appointment that fits you with your consultant." %}</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 float-left">
+            <div class="item-boxes wow fadeInDown" data-wow-delay="0.6s">
+              <div class="icon">
+                <i class="fa fa-headset"></i>
+              </div>
+              <h4>{% trans "Talk to the consultant" %}</h4>
+              <p>{% trans "Exeer's smart consultation platform gives you the sense of a real offline session with the chat, audio, video (optional), whiteboards and more." %}</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- Services Section End -->
+
+    <!-- Features Section Start -->
+    <section id="features" class="section" data-stellar-background-ratio="0.2">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">{% trans "WE PROVIDE YOU WITH THE"%} <span>{% trans "BEST EXPERIENCE" %}</span></h2>
+          <hr class="lines wow zoomIn" data-wow-delay="0.3s">
+          <p class="section-subtitle wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">{% trans "We deliver you high quality service that you will surely love!." %}</p>
+        </div>
+        <div class="row {% if LANGUAGE_CODE == 'ar' %}d-block{% endif %}">
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <div class="content-left text-right wow fadeInLeft animated" data-wow-offset="10">
+              <div class="box-item left">
+                <span class="icon">
+                  <i class="fas fa-user-tie"></i>
+                </span>
+                <div class="text">
+                  <h4>{% trans "The Best Experts" %}</h4>
+                  <p>{% trans "Exeer connects you with the best counselors and psychiatrists around the world." %}</p>
+                </div>
+              </div>
+              <div class="box-item left">
+                <span class="icon">
+                  <i class="fa fa-calendar-check"></i>
+                </span>
+                <div class="text">
+                  <h4>{% trans "Flexible Appointments" %}</h4>
+                  <p>{% trans "Book the appointment that fits you and get reminders on your phone so you do not miss your appointment." %}</p>
+                </div>
+              </div>
+              <div class="box-item left">
+                <span class="icon">
+                  <i class="fa fa-desktop"></i>
+                </span>
+                <div class="text">
+                  <h4>{% trans "Interactive Sessions" %}</h4>
+                  <p>{% trans "Chat, audio, video (optional) and real-time whiteboards give you a great experience." %}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <div class="show-box wow fadeInDown animated" data-wow-offset="10">
+              <img src="{% static "img/features/services.png" %}" alt=""/>
+
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <div class="content-right text-left wow fadeInRight animated" data-wow-offset="10">
+              <div class="box-item right">
+                <span class="icon">
+                  <i class="fas fa-pills"></i>
+                </span>
+                <div class="text">
+                  <h4>{% trans "Online Pharmacy" %}</h4>
+                  <p>{% trans "Get an online prescribtion and get your medication shipped to an address of your choice." %}</p>
+                </div>
+              </div>
+              <div class="box-item right">
+                <span class="icon">
+                  <i class="fa fa-download"></i>
+                </span>
+                <div class="text">
+                  <h4>{% trans "Save & Play" %}</h4>
+                  <p>{% trans "You can save the session content including videos to play later and make the best benefit of the session" %}</p>
+                </div>
+              </div>
+              <div class="box-item right">
+                <span class="icon">
+                  <i class="fa fa-lock"></i>
+                </span>
+                <div class="text">
+                  <h4>{% trans "Encrypted Data" %}</h4>
+                  <p>{% trans "All your data is highly encrypted to protect your privacy against any cyber attak." %}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Features Section End -->
+
+    <!-- Start Video promo Section -->
+    <section class="video-promo section" data-stellar-background-ratio="0.5">
+    <div class="overlay-4"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12">
+              <div class="video-promo-content text-center">
+                <h2 class="wow zoomIn pos" data-wow-duration="1000ms" data-wow-delay="100ms">{% trans "Exeer in two minutes" %}</h2>
+                <p class="wow zoomIn pos" data-wow-duration="1000ms" data-wow-delay="100ms">{% trans "Learn  about Exeer by watching our two minutes video!." %}</p>
+                <a href="" class="video-popup wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="0.3s"><i class="fa fa-play-circle"></i></a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Video Promo Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolios" class="section">
+      <!-- Container Starts -->
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s"><span>{% trans "OUR CONSULTANTS AND DOCTORS" %}</span></h2>
+          <hr class="lines wow zoomIn" data-wow-delay="0.3s">
+          <p class="section-subtitle wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="0.3s">{% trans "Exeer connects you with the best counselors and psychiatrists around the world!." %}</p>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <!-- Portfolio Controller/Buttons -->
+            <div class="controls text-center wow fadeInUp" data-wow-delay=".6s">
+              {% if LANGUAGE_CODE == 'en' %}
+              <a class="control mixitup-control-active btn btn-common" data-filter="all">
+                {% trans "All" %}
+              </a>
+              <a class="control btn btn-common" data-filter=".life-counselors">
+                {% trans "Life Counselors" %}
+              </a>
+              <a class="control btn btn-common" data-filter=".psychiatrists">
+                {% trans "Psychiatrists" %}
+              </a>
+              <a class="control btn btn-common" data-filter=".psychotherapists">
+                {% trans "Psychotherapists" %}
+              </a>
+              {% else %}
+              <a class="control btn btn-common" data-filter=".psychotherapists">
+                {% trans "Psychotherapists" %}
+              </a>
+              <a class="control btn btn-common" data-filter=".psychiatrists">
+                {% trans "Psychiatrists" %}
+              </a>
+              <a class="control btn btn-common" data-filter=".life-counselors">
+                {% trans "Life Counselors" %}
+              </a>
+              <a class="control mixitup-control-active btn btn-common" data-filter="all">
+                {% trans "All" %}
+              </a>
+              {% endif %}
+            </div>
+            <!-- Portfolio Controller/Buttons Ends-->
+
+            <!-- Portfolio Recent Projects -->
+            <div id="portfolio" class="row wow fadeInUp" data-wow-delay="0.8s">
+              <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix life-counselors psychiatrists">
+                <div class="portfolio-item">
+                  <div class="shot-item">
+                  <a class="overlay lightbox" href="{% static "portfolio/img1.jpg" %}">
+                      <img src="{% static "img/portfolio/img1.jpg" %}" alt=""/>
+
+                      <i class="fa fa-plus item-icon" aria-hidden="true"></i>
+                  </a>
+
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix psychiatrists">
+                <div class="portfolio-item">
+                  <div class="shot-item">
+                    <a class="overlay lightbox" href="{% static "img/portfolio/img2.jpg" %}">
+
+                      <img src="{% static "img/portfolio/img2.jpg" %}" alt=""/>
+                      <i class="fa fa-plus item-icon" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix psychotherapists">
+                <div class="portfolio-item">
+                  <div class="shot-item">
+                    <a class="overlay lightbox" href="{% static "img/portfolio/img3.jpg" %}">
+                      <img src="{% static "img/portfolio/img3.jpg" %}" alt=""/>
+                      <i class="fa fa-plus item-icon" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix life-counselors psychotherapists">
+                <div class="portfolio-item">
+                  <div class="shot-item">
+                    <a class="overlay lightbox" href="{% static "img/portfolio/img4.jpg" %}">
+                      <img src="{% static "img/portfolio/img4.jpg" %}" alt=""/>
+                      <i class="fa fa-plus item-icon" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix life-counselors psychiatrists">
+                <div class="portfolio-item">
+                  <div class="shot-item">
+                    <a class="overlay lightbox" href="{% static "img/portfolio/img5.jpg" %}">
+                       <img src="{% static "img/portfolio/img5.jpg" %}" alt=""/>
+                      <i class="fa fa-plus item-icon" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix psychiatrists psychotherapists">
+                <div class="portfolio-item">
+                  <div class="shot-item">
+                    <a class="overlay lightbox" href="{% static "img/portfolio/img6.jpg" %}">
+                       <img src="{% static "img/portfolio/img6.jpg" %}" alt=""/>
+                      <i class="fa fa-plus item-icon" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Container Ends -->
+    </section>
+    <!-- Portfolio Section Ends -->
+    {% comment %}
+    <!-- Start Pricing Table Section -->
+    <div id="pricing" class="section pricing-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">Pricing <span>Plans</span></h2>
+          <hr class="lines wow zoomIn" data-wow-delay="0.3s">
+          <p class="section-subtitle wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">Arkhitech Retainer Plans</p>
+        </div>
+
+        <div class="row pricing-tables">
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="pricing-table table-left wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="0.3s">
+              <div class="icon">
+                <i class="fa fa-gg"></i>
+              </div>
+              <div class="pricing-details">
+                <h2>Silver Plan</h2>
+                <span>Fix Price</span>
+                <ul>
+                  <li>Project Management</li>
+                  <li>Software Architect</li>
+                  <li>Graphic Designer</li>
+                  <li>Software Engineer</li>
+                  <li>Quality Assurance</li>
+                </ul>
+              </div>
+              <div class="plan-button">
+                <a href="#" class="btn btn-common">Get Plan</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="pricing-table wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="0.3s">
+              <div class="icon">
+                <i class="fa fa-heart"></i>
+              </div>
+              <div class="pricing-details">
+                <h2>Golden Plan</h2>
+                <span>Hourly Retainer</span>
+                <ul>
+                  <li>Project Management Per Hour</li>
+                  <li>Software Architect Per Hour</li>
+                  <li>Graphic Designer Per Hour</li>
+                  <li>Software Engineer Per Hour</li>
+                  <li>Quality Assurance Per Hour</li>
+                </ul>
+              </div>
+              <div class="plan-button">
+                <a href="#" class="btn btn-common">Get Plan</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="pricing-table table-left wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="0.3s">
+              <div class="icon">
+                <i class="fa fa-diamond"></i>
+              </div>
+              <div class="pricing-details">
+                <h2>Diamond Plan</h2>
+                <span>Monthly Retainer</span>
+                <ul>
+                   <li>Project Management On Demand</li>
+                  <li>Software Architect On Demand</li>
+                  <li>Graphic Designer On Demand</li>
+                  <li>Software Engineer On Demand</li>
+                  <li>Quality Assurance On Demand</li>
+                </ul>
+              </div>
+              <div class="plan-button">
+                <a href="#" class="btn btn-common">Get Plan</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- End Pricing Table Section -->
+    {% endcomment %}
+
+    <!-- Blog Section -->
+    <section id="blog" class="section">
+      <!-- Container Starts -->
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">{%trans "Snippets From" %} <span>{% trans "The Help Guide" %}</span></h2>
+          <hr class="lines wow zoomIn" data-wow-delay="0.3s">
+          <p class="section-subtitle wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="0.3s">{% trans "Our help guide contains information and tips for a better mental health & wellness" %}<br />{%trans "In collaboration with Harvard Health Publishing, the consumer health publishing division of Harvard Medical School." %}</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 blog-item">
+            <!-- Blog Item Starts -->
+            <div class="blog-item-wrapper wow fadeInUp" data-wow-delay="0.3s">
+              <div class="blog-item-img">
+                <a href="single-post.html">
+				<img src="{% static "img/blog/img1.jpg" %}" alt=""/>
+
+
+                </a>
+              </div>
+              <div class="blog-item-text">
+                <h3>
+                <a href="#">{% trans "How to Help a Loved One with Schizophrenia" %} </a>
+                </h3>
+                <div class="meta-tags">
+                  <span class="date"><i class="fa fa-calendar-full"></i>on Jan 06, 2018</span>
+                  <span class="comments"><a href="#"><i class="fa fa-bubble"></i> 24 Comments</a></span>
+                </div>
+                <p>
+                Signicat is an e-id authentication service provider that operates in Europe and extends that functionality further by providing users the ability to electronically sign and store documents.
+                </p>
+                <a href="single-post.html" class="btn btn-common btn-rm">{% trans "Read More" %}</a>
+              </div>
+            </div>
+            <!-- Blog Item Wrapper Ends-->
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 blog-item">
+            <!-- Blog Item Starts -->
+            <div class="blog-item-wrapper wow fadeInUp" data-wow-delay="0.6s">
+              <div class="blog-item-img">
+                <a href="single-post.html">
+                 <img src="{% static "img/blog/img2.jpg" %}" alt=""/>
+                </a>
+              </div>
+              <div class="blog-item-text">
+                <h3>
+                  <a href="#">{% trans "Teenagers and Smartphones Addiction" %}</a>
+                </h3>
+                <div class="meta-tags">
+                  <span class="date"><i class="fa fa-calendar-full"></i>on Jan 08, 2018</span>
+                  <span class="comments"><a href="#"><i class="fa fa-bubble"></i> 24 Comments</a></span>
+                </div>
+                <p>
+                When it comes to migrating data from postgres to mysql, a developer might face some compatibility issues for which finding the right solution becomes a hectic task.
+                </p>
+                <a href="single-post.html" class="btn btn-common btn-rm">{% trans "Read More" %}</a>
+              </div>
+            </div>
+            <!-- Blog Item Wrapper Ends-->
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 blog-item">
+            <!-- Blog Item Starts -->
+            <div class="blog-item-wrapper wow fadeInUp" data-wow-delay="0.9s">
+              <div class="blog-item-img">
+                <a href="single-post.html">
+                 <img src="{% static "img/blog/img3.jpg" %}" alt=""/>
+                </a>
+              </div>
+              <div class="blog-item-text">
+                <h3>
+                  <a href="#">{% trans "How to Detect the First Signs of Hypomania" %}</a>
+                </h3>
+                <div class="meta-tags">
+                  <span class="date"><i class="fa fa-calendar-full"></i>on Jan 09, 2018</span>
+                  <span class="comments"><a href="#"><i class="fa fa-bubble"></i> 24 Comments</a></span>
+                </div>
+                <p>
+                 Are you having trouble finding an image slider for your images? Why not try making one for yourself quickly using Foundation Orbit and Reveal Modal. The process is straight forward and quite simple.
+                </p>
+                <a href="single-post.html" class="btn btn-common btn-rm">{% trans "Read More" %}</a>
+              </div>
+            </div>
+            <!-- Blog Item Wrapper Ends-->
+          </div>
+        </div>
+        <div class="browse-guide-container">
+          <a href="help-guide" class="btn pos btn-common wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms"> {% trans "Browse our Help Guide" %}</a>
+        </div>
+      </div>
+    </section>
+    <!-- blog Section End -->
+
+    <!-- Contact Section Start -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="row justify-content-md-center">
+          <div class="col-md-9 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="0.3s">
+            <div class="contact-block">
+              <div class="section-header">
+                <h2 class="section-title wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">{% trans "Search" %} <span>{% trans "the Record of Exeer's Text Consultations" %}</span></h2>
+                <hr class="lines wow zoomIn" data-wow-delay="0.3s">
+              </div>
+              <form id="contactForm">
+                <div class="row">
+                  {% comment %}
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required data-error="Please enter your name">
+                      <div class="help-block with-errors"></div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input type="text" placeholder="Your Email" id="email" class="form-control" name="name" required data-error="Please enter your email">
+                      <div class="help-block with-errors"></div>
+                    </div>
+                  </div>
+                  {% endcomment %}
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <input type="text" placeholder="{% trans "Search Subject" %}" id="search_subject" class="form-control" required data-error="{% trans "Please enter the search subject" %}">
+                      <div class="help-block with-errors"></div>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    {% comment %}
+                    <div class="form-group">
+                      <textarea class="form-control" placeholder="Your Message" rows="11" data-error="Write your message" required></textarea>
+                      <div class="help-block with-errors"></div>
+                    </div>
+                    {% endcomment %}
+                    <div class="submit-button text-center">
+                      <button class="btn btn-common" id="submit" type="submit">{% trans "Send" %}</button>
+                      <div id="msgSubmit" class="h3 text-center hidden"></div>
+                      <div class="clearfix"></div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section End -->
+
+    <!-- Counter Section Start -->
+    <div class="counters section" data-stellar-background-ratio="0.5">
+      <div class="overlay-3"></div>
+      <div class="container">
+        <div class="row {% if LANGUAGE_CODE == 'ar' %}d-block{% endif%}">
+          <div class="col-sm-6 col-md-3 col-lg-3 {% if LANGUAGE_CODE == 'ar' %}float-right{% endif%}">
+            <div class="wow fadeInUp" data-wow-delay=".2s">
+              <div class="facts-item">
+                <div class="icon">
+                  <i class="fa fa-headset"></i>
+                </div>
+                <div class="fact-count">
+                  <h3><span>{{counter_sessions}}</span>+</h3>
+                  <h4>{% trans "Session Completed" %}</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+         <div class="col-sm-6 col-md-3 col-lg-3 {% if LANGUAGE_CODE == 'ar' %}float-right{% endif%}">
+            <div class="wow fadeInUp" data-wow-delay=".6s">
+              <div class="facts-item">
+                <div class="icon">
+                  <i class="fa fa-user-tie"></i>
+                </div>
+                <div class="fact-count">
+                  <h3><span>{{counter_experts}}</span>+</h3>
+                  <h4>{% trans "Friendly Experts" %}</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3 col-lg-3 {% if LANGUAGE_CODE == 'ar' %}float-right{% endif%}">
+            <div class="wow fadeInUp" data-wow-delay=".6s">
+              <div class="facts-item">
+                <div class="icon">
+                  <i class="fa fa-users"></i>
+                </div>
+                <div class="fact-count">
+                  <h3><span>{{counter_clients}}</span>+</h3>
+                  <h4>{% trans "Satisfied Clients" %}</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3 col-lg-3">
+            <div class="wow fadeInUp" data-wow-delay=".8s">
+              <div class="facts-item">
+                <div class="icon">
+                  <i class="fas fa-book-medical"></i>
+                </div>
+                <div class="fact-count">
+                  <h3><span>{{counter_tips}}</span>+</h3>
+                  <h4>{% trans "Help Tips" %}</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Counter Section End -->
+
+    <!-- testimonial Section Start -->
+    <div id="testimonial" class="section">
+      <div class="container">
+        <div class="row justify-content-md-center">
+          <div class="col-md-10 wow fadeInRight" data-wow-delay="0.2s">
+            <div class="touch-slider owl-carousel owl-theme">
+              <div class="testimonial-item">
+			   <img src="{% static "img/testimonial/customer1.png" %}" alt=""/>
+
+
+                <div class="testimonial-text">
+                  <p>We got Arkhitech to build us a simplified 4-page online store.<br> They took just over a week to code, fix bugs and address change requests.<br> You can rely on them to get the job done!</p>
+                  <h3>Johnathan Doe</h3>
+                  <span>Marketing Head Matrix media</span>
+                </div>
+              </div>
+              <div class="testimonial-item">
+               <img src="{% static "img/testimonial/customer2.png" %}" alt=""/>
+                <div class="testimonial-text">
+                  <p>Arkhitech provides excellent workmanship. They communicate effectively and complete tasks quickly.<br> I would not hesitate to recommend them for your jobs, and I hope to work with them on future projects of my own.</p>
+                  <h3>Oidila Matik</h3>
+                  <span>President Lexo Inc</span>
+                </div>
+              </div>
+              <div class="testimonial-item">
+               <img src="{% static "img/testimonial/customer3.png" %}" alt=""/>
+                <div class="testimonial-text">
+                  <p>Thanks for the quick work… Exactly what I wanted. Great work.</p>
+                  <h3>- Alex Dattilo</h3>
+                  <span>CEO Optima Inc</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- testimonial Section Start -->
+
+    <!-- Footer Section Start -->
+
+    <!-- Footer Section Start -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="social-icons wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="0.3s">
+              <ul>
+                <li class="facebook"><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li class="twitter"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li class="google-plus"><a href="#"><i class="fab fa-google-plus"></i></a></li>
+                <li class="linkedin"><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                <li class="pinterest"><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                <li class="dribbble"><a href="#"><i class="fab fa-dribbble"></i></a></li>
+              </ul>
+            </div>
+            <div class="site-info wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="0.3s">
+              <p>{% trans "All copyrights reserved" %} &copy; {{copyright_year}}{% comment %} - Designed & Developed by <a rel="nofollow" href="https://devdap.com">devdap</a>{% endcomment %}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Go To Top Link -->
+    <a href="#" class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </a>
+
+    <div id="loader">
+      <div class="spinner">
+        <div class="double-bounce1"></div>
+        <div class="double-bounce2"></div>
+      </div>
+    </div>
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="{% static "js/jquery-min.js" %}"></script>
+    <script src="{% static "js/tether.min.js" %}"></script>
+    <script src="{% static "js/bootstrap.min.js" %}"></script>
+    <script src="{% static "js/classie.js" %}"></script>
+    <script src="{% static "js/mixitup.min.js" %}"></script>
+    <script src="{% static "js/nivo-lightbox.js" %}"></script>
+    <script src="{% static "js/owl.carousel.min.js" %}"></script>
+    <script src="{% static "js/jquery.stellar.min.js" %}"></script>
+    <script src="{% static "js/jquery.nav.js" %}"></script>
+    <script src="{% static "js/smooth-scroll.js" %}"></script>
+    <script src="{% static "js/smooth-on-scroll.js" %}"></script>
+    <script src="{% static "js/wow.js" %}"></script>
+    <script src="{% static "js/menu.js" %}"></script>
+    <script src="{% static "js/jquery.vide.js" %}"></script>
+    <script src="{% static "js/jquery.counterup.min.js" %}"></script>
+    <script src="{% static "js/jquery.magnific-popup.min.js" %}"></script>
+    <script src="{% static "js/waypoints.min.js" %}"></script>
+    <script src="{% static "js/form-validator.min.js" %}"></script>
+    <script src="{% static "js/contact-form-script.js" %}"></script>
+    <script src="{% static "js/main.js" %}"></script>
+
+  </body>
+</html>

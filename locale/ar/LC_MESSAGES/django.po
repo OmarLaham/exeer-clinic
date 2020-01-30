@@ -1,0 +1,381 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-06-05 16:30+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+
+#: .\exeerapp\forms.py:12
+msgid "Profile picture"
+msgstr "الصورة الشخصية"
+
+#: .\exeerapp\forms.py:13 .\exeerapp\forms.py:23
+msgid "Name in English"
+msgstr "الاسم باللغة الإنكليزية"
+
+#: .\exeerapp\forms.py:14 .\exeerapp\forms.py:24
+msgid "Name in Arabic"
+msgstr "الاسم باللغة العربية"
+
+#: .\exeerapp\forms.py:15 .\exeerapp\forms.py:25
+msgid "Profile in English"
+msgstr "المعلومات الشخصية باللغة الإنكليزية"
+
+#: .\exeerapp\forms.py:16 .\exeerapp\forms.py:26
+msgid "Profile in Arabic"
+msgstr "المعلومات الشخصية باللغة العربية"
+
+#: .\exeerapp\forms.py:17 .\exeerapp\forms.py:27
+msgid "Session price in USD"
+msgstr "سعر الجلسة بالدولار الأمريكي"
+
+#: .\exeerapp\forms.py:18 .\exeerapp\forms.py:28
+msgid "Session price in Syrian Pound"
+msgstr "سعر الجلسة بالليرة السورية"
+
+#: .\exeerapp\forms.py:22
+msgid "Upload your picture"
+msgstr "ارفع صورتك الشخصية"
+
+#: .\exeerapp\forms.py:23
+msgid "Please enter you name in English"
+msgstr "رجاءً قم بإدخال الاسم باللغة الإنكليزية"
+
+#: .\exeerapp\forms.py:24
+msgid "Please enter you name in Arabic"
+msgstr "رجاءً قم بإدخال الاسم باللغة العربية"
+
+#: .\exeerapp\forms.py:25
+msgid "Fill you profile in English"
+msgstr "قم بملء معلوماتك الشخصية باللغة الإنكليزية"
+
+#: .\exeerapp\forms.py:26
+msgid "Fill you profile in Arabic"
+msgstr "قم بملء معلوماتك الشخصية باللغة العربية"
+
+#: .\exeerapp\forms.py:27
+msgid "Please enter the price session in USD"
+msgstr "الرجاء إدخال سعر الجلسة بالدولار الأمريكي"
+
+#: .\exeerapp\forms.py:28
+msgid "Please enter the price session in Syrian pound"
+msgstr "الرجاء إدخال سعر الجلسة بالليرة السورية"
+
+#: .\exeerapp\views.py:74
+msgid "Profile saved!"
+msgstr "تم حفظ المعلومات الشخصية"
+
+#: .\exeerapp\views.py:82
+msgid "You don't have permission to do this"
+msgstr ""
+
+#: .\templates\access_denied.html:6 .\templates\access_denied.html:7
+msgid "Access Denied"
+msgstr "الوصول ممنوع"
+
+#: .\templates\access_denied.html:10
+msgid "Sorry. You can't access this page."
+msgstr "عذراً. لا يمكنك الوصول لهذه الصفحة."
+
+#: .\templates\base.html:14 .\templates\base.html:63 .\templates\index.html:14
+#: .\templates\index.html:63 .\templates\index.html:73
+msgid "Exeer"
+msgstr "إكسير"
+
+#: .\templates\base.html:34 .\templates\index.html:34
+msgid "Home"
+msgstr "الرئيسية"
+
+#: .\templates\base.html:37 .\templates\index.html:37
+msgid "How we work"
+msgstr "كيف تعمل المنصة؟"
+
+#: .\templates\base.html:40 .\templates\index.html:40
+msgid "Features"
+msgstr "الميزات"
+
+#: .\templates\base.html:43 .\templates\index.html:43
+msgid "Our Counselors"
+msgstr "مستشارونا"
+
+#: .\templates\base.html:46 .\templates\help_guide.html:6
+#: .\templates\help_guide.html:7 .\templates\index.html:46
+#, fuzzy
+#| msgid "The Help Guide"
+msgid "Help Guide"
+msgstr "دليل المساعدة النفسي"
+
+#: .\templates\base.html:49 .\templates\index.html:49
+msgid "Search Consultations"
+msgstr "ابحث ضمن الاستشارات"
+
+#: .\templates\base.html:107 .\templates\index.html:695
+msgid "All copyrights reserved"
+msgstr "جميع الحقوق محفوظة"
+
+#: .\templates\consultant_profile.html:6 .\templates\consultant_profile.html:7
+msgid "Consultant Profile"
+msgstr "المعلومات الشخصية للمستشار"
+
+#: .\templates\consultant_profile.html:37
+msgid "Save"
+msgstr ""
+
+#: .\templates\index.html:14
+msgid "Online Counseling"
+msgstr "للاستشارات أونلاين"
+
+#: .\templates\index.html:74
+msgid "The Smart Counseling Platform"
+msgstr "المنصة الذكية للاستشارات عبر الإنترنت"
+
+#: .\templates\index.html:75
+msgid ""
+"Exeer is the first life and psychiatric counseling platform that ensures "
+"privacy and security and provides the counselor with the sense of a real "
+"counseling session."
+msgstr ""
+"تعد إكسير المنصة الإلكترونية الأولى للاستشارات الحياتية والنفسية والتي تضمن "
+"الخصوصية والأمان لصاحب الاستشارة وتزوده بالإحساس بجلسة استشارة على أرض "
+"الواقع."
+
+#: .\templates\index.html:76 .\templates\index.html:90
+msgid "How do we work?"
+msgstr "كيف تعمل المنصة؟"
+
+#: .\templates\index.html:100
+msgid "Choose the consultant or the psychiatrist"
+msgstr "اختر المستشار أو الطبيب النفسي"
+
+#: .\templates\index.html:101
+msgid ""
+"Choose one of exeer's experienced consultants or psychiatrists depending on "
+"the criteria that you choose."
+msgstr "اختر واحداً من مستشاري أو أطباء إكسير بالاعتماد على معايير تحددها أنت"
+
+#: .\templates\index.html:109
+msgid "Book an appointment"
+msgstr "احجز موعداً"
+
+#: .\templates\index.html:110
+msgid ""
+"Use exeer's smart calendar to book an appointment that fits you with your "
+"consultant."
+msgstr "استخدم تقويم إكسير الذكي لتحجزاً موعداً مناسباً لك"
+
+#: .\templates\index.html:118
+msgid "Talk to the consultant"
+msgstr "تكلم إلى المستشار"
+
+#: .\templates\index.html:119
+msgid ""
+"Exeer's smart consultation platform gives you the sense of a real offline "
+"session with the chat, audio, video (optional), whiteboards and more."
+msgstr ""
+"تمنحك منصة إكسير الذكية إحساساً بجلسة استشارة على أرض الواقع، من خلال "
+"المحادثات النصية والصوت والفيديو (اختياري) والألواح التفاعلية وغير ذلك."
+
+#: .\templates\index.html:132
+msgid "WE PROVIDE YOU WITH THE"
+msgstr "نحن نزوّدك"
+
+#: .\templates\index.html:132
+msgid "BEST EXPERIENCE"
+msgstr "بأفضل تجربة استشارة"
+
+#: .\templates\index.html:134
+msgid "We deliver you high quality service that you will surely love!."
+msgstr "نحن نقدم لك خدمة ذات جودة عالية وكلنا ثقة بأنك ستحبها!."
+
+#: .\templates\index.html:144
+msgid "The Best Experts"
+msgstr "أفضل الخبراء"
+
+#: .\templates\index.html:145
+msgid ""
+"Exeer connects you with the best counselors and psychiatrists around the "
+"world."
+msgstr "تصلك منصة إكسير مع أفضل المستشارين والأطباء النفسيين حول العالم."
+
+#: .\templates\index.html:153
+msgid "Flexible Appointments"
+msgstr "مواعيد مرنة"
+
+#: .\templates\index.html:154
+msgid ""
+"Book the appointment that fits you and get reminders on your phone so you do "
+"not miss your appointment."
+msgstr "احجز موعداً يناسبك وستصلك التذكيرات عبر الهاتف كي لا يفوتك الموعد."
+
+#: .\templates\index.html:162
+msgid "Interactive Sessions"
+msgstr "جلسات تفاعلية"
+
+#: .\templates\index.html:163
+msgid ""
+"Chat, audio, video (optional) and real-time whiteboards give you a great "
+"experience."
+msgstr ""
+"تمنحك المحادثة النصية، الصوت، الفيديو (اختياري)، والألواح البيضاء التفاعلية "
+"تجربة استشارة مميزة."
+
+#: .\templates\index.html:181
+msgid "Online Pharmacy"
+msgstr "الصيدلية الإلكترونية"
+
+#: .\templates\index.html:182
+msgid ""
+"Get an online prescribtion and get your medication shipped to an address of "
+"your choice."
+msgstr ""
+"احصل على وصفتك الدوائية عبر الإنترنت وسيتم شحن دوائك إلى أي عنوان تختاره."
+
+#: .\templates\index.html:190
+msgid "Save & Play"
+msgstr "احفظ وشغل لاحقاً"
+
+#: .\templates\index.html:191
+msgid ""
+"You can save the session content including videos to play later and make the "
+"best benefit of the session"
+msgstr ""
+"يمكن لك حفظ محتويات الجلسة متضمنة الفيديو، لتشغلها لاحقاً وتستفيد بالشكل "
+"الأقصى من جلسة الاستشارة."
+
+#: .\templates\index.html:199
+msgid "Encrypted Data"
+msgstr "بيانات محمية بالتشفير"
+
+#: .\templates\index.html:200
+msgid ""
+"All your data is highly encrypted to protect your privacy against any cyber "
+"attak."
+msgstr ""
+"إن جميع بياناتك مشفرة بشكل قوي لحماية خصوصيتك من أي اختراق أو هجوم إلكتروني."
+
+#: .\templates\index.html:217
+msgid "Exeer in two minutes"
+msgstr "منصة إكسير في دقيقتين"
+
+#: .\templates\index.html:218
+msgid "Learn  about Exeer by watching our two minutes video!."
+msgstr ""
+"تعرف على منصة إكسير من خلال مشاهدة هذا الفيديو التعريفي القصير بدقيقتين فقط!."
+
+#: .\templates\index.html:232
+msgid "OUR CONSULTANTS AND DOCTORS"
+msgstr "مستشارونا وأطباؤنا النفسيون"
+
+#: .\templates\index.html:234
+msgid ""
+"Exeer connects you with the best counselors and psychiatrists around the "
+"world!."
+msgstr "تصلك منصة إكسير مع أفضل المستشارين والأطباء النفسيين حول العالم."
+
+#: .\templates\index.html:242 .\templates\index.html:264
+msgid "All"
+msgstr "الكل"
+
+#: .\templates\index.html:245 .\templates\index.html:261
+msgid "Life Counselors"
+msgstr "مستشارون حياتيون"
+
+#: .\templates\index.html:248 .\templates\index.html:258
+msgid "Psychiatrists"
+msgstr "أطباء نفسيون"
+
+#: .\templates\index.html:251 .\templates\index.html:255
+msgid "Psychotherapists"
+msgstr "معالجون نفسيون"
+
+#: .\templates\index.html:431
+msgid "Snippets From"
+msgstr "مقتطفات من"
+
+#: .\templates\index.html:431
+msgid "The Help Guide"
+msgstr "دليل المساعدة النفسي"
+
+#: .\templates\index.html:433
+msgid ""
+"Our help guide contains information and tips for a better mental health & "
+"wellness"
+msgstr "يحتوي دليل المساعدة في إكسير على معلومات ونصائح لحياة نفسية أفضل."
+
+#: .\templates\index.html:433
+msgid ""
+"In collaboration with Harvard Health Publishing, the consumer health "
+"publishing division of Harvard Medical School."
+msgstr ""
+"هذا الدليل مبني بالتشارك مع قسم المنشورات في كلية الطب في جامعة هارفرد."
+
+#: .\templates\index.html:448
+msgid "How to Help a Loved One with Schizophrenia"
+msgstr "كيف تساعد شخصاً تحبه ويعاني من الفصام"
+
+#: .\templates\index.html:457 .\templates\index.html:482
+#: .\templates\index.html:507
+msgid "Read More"
+msgstr "اقرأ المزيد"
+
+#: .\templates\index.html:473
+msgid "Teenagers and Smartphones Addiction"
+msgstr "المراهقون وإدمان الهواتف الذكية"
+
+#: .\templates\index.html:498
+msgid "How to Detect the First Signs of Hypomania"
+msgstr "كيف تلاحظ العلامات الأولى لتحت الهوس"
+
+#: .\templates\index.html:514
+msgid "Browse our Help Guide"
+msgstr "تصفح دليل المساعدة النفسية"
+
+#: .\templates\index.html:527
+msgid "Search"
+msgstr "ابحث ضمن"
+
+#: .\templates\index.html:527
+msgid "the Record of Exeer's Text Consultations"
+msgstr "سجل إكسير للاستشارات المكتوبة"
+
+#: .\templates\index.html:549
+msgid "Search Subject"
+msgstr "عنوان البحث"
+
+#: .\templates\index.html:549
+msgid "Please enter the search subject"
+msgstr "الرجاء إدخال عنوان البحث"
+
+#: .\templates\index.html:562
+msgid "Send"
+msgstr "إرسال"
+
+#: .\templates\index.html:589
+msgid "Session Completed"
+msgstr "جلسات منجزة"
+
+#: .\templates\index.html:602
+msgid "Friendly Experts"
+msgstr "خبراء ودودن"
+
+#: .\templates\index.html:615
+msgid "Satisfied Clients"
+msgstr "عملاء راضون"
+
+#: .\templates\index.html:628
+msgid "Help Tips"
+msgstr "نصائح نفسية للمساعدة"

@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+<!-- Current language: {{ LANGUAGE_CODE }} -->
+{% load static %}
+{% block tab_title %}{% trans "Access Denied" %}{% endblock %}
+{% block page_title %}{% trans "Access Denied" %}{% endblock %}
+{% block content %}
+  <div id="access-denied">
+    <h2 align="center">{% trans "Sorry. You can't access this page." %}</h2>
+    <img src="{% static "access_denied.png" %}" />
+  </div>
+{% endblock %}

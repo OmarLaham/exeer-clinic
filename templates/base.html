@@ -1,0 +1,150 @@
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+<!-- Current language: {{ LANGUAGE_CODE }} -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="Bootstrap, Landing page, Template, Registration, Landing">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="Grayrids">
+    <title>{% trans "Exeer" %} | {% block tab_title %}{% endblock %}</title>
+    <!-- Favicon -->
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static "style.css" %}">
+    {% if LANGUAGE_CODE == 'ar' %}
+    <link rel="stylesheet" href="{% static "style-ar.css" %}">
+    {% endif %}
+
+    <!-- Favicon -->
+    <link rel="icon" href="{% static "img/favicon.ico" %}">
+
+  </head>
+  <body>
+      <div class="menu-wrap">
+        <nav class="menu navbar">
+          <div class="icon-list navbar-collapse">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#video-area">{% trans "Home" %}</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">{% trans "How we work" %}</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#features">{% trans "Features" %}</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#portfolios">{% trans "Our Counselors" %}</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#blog">{% trans "Help Guide" %}</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">{% trans "Search Consultations" %}</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <button class="close-button" id="close-button"><i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
+      </div>
+  	<!-- Header Section Start -->
+
+    <header id="video-area" data-stellar-background-ratio="0.5">
+     <div id="block" data-vide-bg="{% static "video/video" %}"></div>
+      <div class="fixed-top">
+          <div class="container">
+            <div class="logo-menu">
+              <a href="" class="logo"><strong>{% trans "Exeer" %}</strong></a>
+              <button class="menu-button" id="open-button"><i class="fa fa-bars" aria-hidden="true"></i></button>
+            </div>
+          </div>
+      </div>
+          <div class="overlay-2"></div>
+    </header>
+    <!-- Header Section End -->
+
+
+    <!-- Base Section Start -->
+    <section id="base" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s"><span>{% block page_title %}{% endblock %}</span></h2>
+          <hr class="lines wow zoomIn" data-wow-delay="0.3s">
+          <p class="section-subtitle wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s"></p>
+        </div>
+        {% block alerts %}
+        {% endblock %}
+        {% block content %}
+        {% endblock %}
+      </div>
+    </section>
+    <!-- Base Section End -->
+
+    <!-- Footer Section Start -->
+
+    <!-- Footer Section Start -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="social-icons wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="0.3s">
+              <ul>
+                <li class="facebook"><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li class="twitter"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li class="google-plus"><a href="#"><i class="fab fa-google-plus"></i></a></li>
+                <li class="linkedin"><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                <li class="pinterest"><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                <li class="dribbble"><a href="#"><i class="fab fa-dribbble"></i></a></li>
+              </ul>
+            </div>
+            <div class="site-info wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="0.3s">
+              <p>{% trans "All copyrights reserved" %} &copy; {{copyright_year}}{% comment %} - Designed & Developed by <a rel="nofollow" href="https://devdap.com">devdap</a>{% endcomment %}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Go To Top Link -->
+    <a href="#" class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </a>
+
+    <div id="loader">
+      <div class="spinner">
+        <div class="double-bounce1"></div>
+        <div class="double-bounce2"></div>
+      </div>
+    </div>
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="{% static "js/jquery-min.js" %}"></script>
+    <script src="{% static "js/tether.min.js" %}"></script>
+    <script src="{% static "js/bootstrap.min.js" %}"></script>
+    <script src="{% static "js/classie.js" %}"></script>
+    <script src="{% static "js/mixitup.min.js" %}"></script>
+    <script src="{% static "js/nivo-lightbox.js" %}"></script>
+    <script src="{% static "js/owl.carousel.min.js" %}"></script>
+    <script src="{% static "js/jquery.stellar.min.js" %}"></script>
+    <script src="{% static "js/jquery.nav.js" %}"></script>
+    <script src="{% static "js/smooth-scroll.js" %}"></script>
+    <script src="{% static "js/smooth-on-scroll.js" %}"></script>
+    <script src="{% static "js/wow.js" %}"></script>
+    <script src="{% static "js/menu.js" %}"></script>
+    <script src="{% static "js/jquery.vide.js" %}"></script>
+    <script src="{% static "js/jquery.counterup.min.js" %}"></script>
+    <script src="{% static "js/jquery.magnific-popup.min.js" %}"></script>
+    <script src="{% static "js/waypoints.min.js" %}"></script>
+    <script src="{% static "js/form-validator.min.js" %}"></script>
+    <script src="{% static "js/contact-form-script.js" %}"></script>
+    <script src="{% static "js/main.js" %}"></script>
+
+  </body>
+</html>

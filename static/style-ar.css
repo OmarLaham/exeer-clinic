@@ -1,0 +1,44 @@
+#services {
+  min-height: 440px;
+}
+@media (max-width: 640px) {
+  #services {
+    min-height: 870px;
+  }
+}
+#services .float-left{
+  float: right!important;
+}
+
+#features .d-block > * {
+  float: right!important;
+}
+
+@media (max-width: 640px) {
+  #features {
+    min-height: 1480px;
+  }
+}
+
+.counters .facts-item {
+  direction: rtl;
+}
+
+#contact #search_subject {
+  direction: rtl;
+}
+
+#blog .blog-item-text {
+  direction: rtl;
+}
+
+.alert {
+  direction: rtl;
+}
+
+#consultant-profile-form {
+  direction: rtl;
+}
+#consultant-profile-form label {
+  float:right;
+}

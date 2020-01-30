@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+<!-- Current language: {{ LANGUAGE_CODE }} -->
+{% load static %}
+{% block tab_title %}{% trans "Help Guide" %}{% endblock %}
+{% block page_title %}{% trans "Help Guide" %}{% endblock %}
+{% block content %}
+  help guide content
+{% endblock %}
