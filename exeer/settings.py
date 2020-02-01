@@ -39,13 +39,14 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'django.contrib.staticfiles',
+
     'ckeditor',
     'ckeditor_uploader',
     'captcha',
-]
+]#'django.contrib.staticfiles',
 
 MIDDLEWARE = [
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -131,6 +132,11 @@ STATIC_ROOT = os.path.join('')
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = ( os.path.join('static'), )
+
+#Heroku recommends the use of WhiteNoise (a Django package) to serve static files in production,
+## since Django does not support serving static files in production, by default.
+#  Add configuration for static files storage using whitenoise
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # User Roles
 USER_ROLES = (
