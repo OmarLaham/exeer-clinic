@@ -11,6 +11,8 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
 import os
+#for db settings for deploy
+import dj_database_url
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -25,7 +27,7 @@ SECRET_KEY = '=6cg^r6+9#9h=(bf75p)kfzy)^=mbpnhl))d(7q$)z74ahra^@'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["localhost", "https://exeer.herokuapp.com/"]
 
 
 # Application definition
@@ -130,7 +132,6 @@ STATIC_URL = '/static/'
 
 STATICFILES_DIRS = ( os.path.join('static'), )
 
-
 # User Roles
 USER_ROLES = (
     'admin',
@@ -152,3 +153,8 @@ CKEDITOR_CONFIGS = {
 #uploads
 MEDIA_URL = '/uploads/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'uploads')
+
+
+#db settings for deploy
+prod_db  =  dj_database_url.config(conn_max_age=500)
+DATABASES['default'].update(prod_db)
